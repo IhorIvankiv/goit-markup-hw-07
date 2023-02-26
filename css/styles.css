@@ -646,12 +646,12 @@ body {
   transform: translateY(-50%);
 }
 
-.modal-input:is(:hover, :focus) {
-  border: 1px solid #4d5ae5;
+.modal-icon:focus {
+  fill: #4d5ae5;
 }
 
-.modal-input:focus-visible {
-  border: 1px solid #4D5AE5;
+.modal-input:is(:hover, :focus) {
+  border: 1px solid #4d5ae5;
 }
 
 .modal-input-text {
