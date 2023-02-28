@@ -398,9 +398,15 @@
           </p>
           <form class="modal-form">
             <div class="modal-field">
-              <label class="modal-input-text" for="name" id="name">Name</label>
+              <label class="modal-input-text" for="name">Name</label>
               <div class="input-wrap">
-                <input type="text" name="name" class="modal-input" required />
+                <input
+                  type="text"
+                  name="name"
+                  class="modal-input"
+                  id="name"
+                  required
+                />
                 <svg class="modal-icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
@@ -408,11 +414,9 @@
             </div>
 
             <div class="modal-field">
-              <label class="modal-input-text" for="phone" id="phone"
-                >Phone</label
-              >
+              <label class="modal-input-text" for="phone">Phone</label>
               <div class="input-wrap">
-                <input type="text" name="phone" class="modal-input" />
+                <input type="tel" name="phone" class="modal-input" id="phone" />
                 <svg class="modal-icon" width="18" height="24">
                   <use href="./images/icons.svg#icon-phone-black"></use>
                 </svg>
@@ -420,11 +424,12 @@
             </div>
 
             <div class="modal-field">
-              <label class="modal-input-text" for="E-male">E-male</label>
+              <label class="modal-input-text" for="e-mail">E-male</label>
               <div class="input-wrap">
                 <input
-                  type="text"
-                  name="e-male"
+                  aria-label="E-mail"
+                  type="e-mail"
+                  name="e-mail"
                   class="modal-input"
                   id="e-mail"
                 />
@@ -433,8 +438,8 @@
                 </svg>
               </div>
             </div>
-            <label class="modal-input-text">Comment</label>
             <div class="input-wrap">
+              <label class="modal-input-text">Comment</label>
               <textarea
                 class="modal-input-textarea"
                 name="modal-input-textarea"
@@ -444,7 +449,7 @@
                 rows="10"
               ></textarea>
             </div>
-            <div>
+            <div class="policy">
               <input
                 name="policy"
                 class="input-check visually-hidden"
@@ -513,17 +518,15 @@
         </div>
         <div>
           <p class="footer-subscribe">Subscribe</p>
-          <label>
+          <form class="footer-form">
             <input class="footer-email" type="Email" placeholder="E-mail" />
-          </label>
-        </div>
-        <div class="footer-subscribe-btn">
-          <button class="subscribe-btn">
-            Subscribe
-            <svg class="subscribe-btn-icon" width="24px" height="24px">
-              <use href="./images/icons.svg#icon-Frame"></use>
-            </svg>
-          </button>
+            <button class="subscribe-btn">
+              Subscribe
+              <svg class="subscribe-btn-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-Frame"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
