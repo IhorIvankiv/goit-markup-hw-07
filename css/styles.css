@@ -613,12 +613,16 @@ body {
 }
 
 .modal-field {
-  position: relative;
   margin-bottom: 8px;
 }
 
 .input-wrap {
   position: relative;
+  margin-bottom: 8px;
+}
+
+.input-wrap-textarea {
+  padding-bottom: 16px;
 }
 
 .modal-input-name {
@@ -669,7 +673,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.04em;
-  color: rgba(117, 117, 117, 0.5);
+  color: #8E8F99;
   border-radius: 4px;
   background-color: transparent;
   margin-bottom: 4px;
@@ -688,7 +692,6 @@ body {
   letter-spacing: 0.04em;
   outline: transparent;
   padding: 8px 16px;
-  margin-bottom: 16px;
 }
 
 .modal-input-textarea:focus {
