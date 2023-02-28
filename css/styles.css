@@ -434,6 +434,9 @@ body {
   align-items: center;
   justify-content: center;
   fill: currentColor;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms;
 }
 
 .card-content {
