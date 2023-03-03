@@ -16,6 +16,12 @@
   --light-slate: #8e8f99;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -76,7 +82,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 1158px;
+  width: 426px;
 }
 
 .header {
@@ -447,15 +453,17 @@ body {
 }
 
 .filter-section {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 64px;
+  padding-bottom: 96px;
 }
 
 .filter-button-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 72px;
-  gap: 48px 24px;
+  gap: 24px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .filter-button:hover,
@@ -486,13 +494,13 @@ body {
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  gap: 48px 0;
 }
 
 .filter-list-item {
   position: relative;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-  width: calc((100% - 48px) / 3);
+  width: 100%;
 }
 
 .filter-list-link:is(:hover, :focus) .filter-cover-text {
@@ -673,7 +681,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.04em;
-  color: #8E8F99;
+  color: #8e8f99;
   border-radius: 4px;
   background-color: transparent;
   margin-bottom: 4px;
@@ -903,4 +911,56 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 426px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    min-width: 766px;
+  }
+
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .filter-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .filter-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .filter-button-list {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    min-width: 1158px;
+  }
+
+  .filter-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+  }
+
+  .filter-list-item {
+    width: calc((100% - 48px) / 3);
+  }
 }
