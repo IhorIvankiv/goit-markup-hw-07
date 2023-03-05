@@ -82,7 +82,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 426px;
+  max-width: 426px;
 }
 
 .header {
@@ -189,8 +189,8 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  min-height: 600px;
-  max-width: 1440px;
+  width: 100%;
+  min-height: 432px;
   margin-right: auto;
   margin-left: auto;
   background-color: var(--primary-bg-color);
@@ -201,9 +201,9 @@ body {
 }
 
 .hero-title {
-  width: 496px;
+  max-width: 319px;
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #fff;
@@ -915,7 +915,24 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 426px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .hero-section {
+    min-height: 436px;
+  }
+
+  .hero-title {
+    max-width: 494px;
+    text-align: center;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    min-width: 496px;
   }
 }
 
@@ -924,6 +941,11 @@ body {
     margin: 0 auto;
     padding: 0 15px;
     min-width: 766px;
+  }
+
+  .hero-section {
+    min-height: 436px;
+    width: 100%;
   }
 
   .filter-list {
@@ -950,7 +972,12 @@ body {
   .container {
     margin: 0 auto;
     padding: 0 15px;
-    min-width: 1158px;
+    max-width: 1158px;
+  }
+
+  .hero-section {
+    min-height: 600px;
+    max-width: 1440px;
   }
 
   .filter-list {
