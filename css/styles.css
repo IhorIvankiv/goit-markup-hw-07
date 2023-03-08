@@ -82,7 +82,6 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 426px;
 }
 
 .header {
@@ -188,6 +187,7 @@ body {
 .hero-section {
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   width: 100%;
   min-height: 432px;
@@ -208,7 +208,7 @@ body {
   letter-spacing: 0.02em;
   color: #fff;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .hero-button {
@@ -236,11 +236,14 @@ body {
 
 .features-section {
   padding-top: 120px;
-  padding-bottom: 120px;
+}
+
+.features-container {
+  padding: 0 15px;
 }
 
 .features-rectangle {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 264px;
@@ -269,21 +272,35 @@ body {
 
 .features-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
+  max-width: 428px;
+  margin: 0 auto;
+  padding-bottom: 96px;
 }
 
 .features-item {
-  width: 264px;
+  padding-bottom: 72px;
+}
+
+.features-subtitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 
 .features-text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: #434455;
 }
 
 .doing-section {
+  display: none;
   padding-bottom: 120px;
 }
 
@@ -325,9 +342,11 @@ body {
 
 .team-list {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
   background: var(--light-mode-bg);
-  gap: 24px;
+  gap: 72px;
 }
 
 .team-item {
@@ -405,7 +424,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 72px 16px;
+  flex-wrap: wrap;
 }
 
 .customers-item {
@@ -917,6 +937,7 @@ body {
   .container {
     margin: 0 auto;
     padding: 0 15px;
+    max-width: 426px;
   }
 
   .hero-section {
@@ -924,23 +945,48 @@ body {
   }
 
   .hero-title {
-    max-width: 494px;
     text-align: center;
-    font-size: 56px;
+    font-size: 36px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #fff;
     margin: 0 auto;
-    margin-bottom: 48px;
-    min-width: 496px;
+    margin-bottom: 72px;
+  }
+
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    width: calc((100% - 24) / 2);
+  }
+
+  .features-subtitle {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  }
+
+  .features-rectangle {
+    display: none;
+  }
+
+  .team-list {
+    gap: 72px 24px;
+  }
+
+  .customers-list {
+    margin: 0 auto;
+    max-width: 552px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .banner-container {
     margin: 0 auto;
     padding: 0 15px;
-    min-width: 766px;
   }
 
   .hero-section {
@@ -948,10 +994,68 @@ body {
     width: 100%;
   }
 
+  .hero-title {
+    max-width: 496px;
+    text-align: center;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+
+  .features-container {
+    max-width: 736px;
+    margin: 0 auto;
+  }
+
+  .features-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 736px;
+  }
+
+  .features-item {
+    max-width: 356px;
+    width: calc((100% - 24) / 2);
+  }
+
+  .features-subtitle {
+    text-align: start;
+  }
+
+  .features-rectangle {
+    display: none;
+  }
+
+  .team-container {
+    margin: 0 auto;
+    max-width: 552px;
+  }
+
+  .team-list {
+    max-width: 552px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .customers-list {
+    flex-wrap: wrap;
+    max-width: 552px;
+    margin: 0 auto;
+  }
+
   .filter-list {
     display: flex;
     flex-wrap: wrap;
+    max-width: 736px;
     gap: 72px 24px;
+    min-width: 736px;
+    margin: 0 auto;
   }
 
   .filter-list-item {
@@ -964,6 +1068,7 @@ body {
   }
 
   .filter-button-list {
+    min-width: 586px;
     justify-content: center;
     margin-bottom: 64px;
   }
@@ -975,9 +1080,43 @@ body {
     max-width: 1158px;
   }
 
+  .team-section > .container {
+    max-width: 1158px;
+  }
+
   .hero-section {
     min-height: 600px;
     max-width: 1440px;
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+  .features-section {
+    padding-bottom: 0;
+  }
+
+  .features-list {
+    max-width: 100%;
+    flex-wrap: nowrap;
+    padding-bottom: 120px;
+  }
+
+  .features-rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
+  .team-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: var(--light-mode-bg);
+    gap: 24px;
+    flex-wrap: nowrap;
   }
 
   .filter-list {
@@ -987,7 +1126,45 @@ body {
     gap: 48px 24px;
   }
 
+  .features-item {
+    max-width: 264px;
+    padding-bottom: 0;
+  }
+
   .filter-list-item {
     width: calc((100% - 48px) / 3);
+  }
+
+  .features-subtitle {
+    text-align: start;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2px;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding: 8px 0;
+  }
+
+  .features-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+  }
+
+  .doing-section {
+    display: block;
+  }
+
+  .team-list {
+    display: flex;
+    text-align: center;
+    background: var(--light-mode-bg);
+    gap: 24px;
+  }
+
+  .customers-list {
+    max-width: 1158px;
+    margin: 0 auto;
   }
 }
