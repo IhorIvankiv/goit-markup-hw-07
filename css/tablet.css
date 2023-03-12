@@ -23,7 +23,7 @@
     justify-content: end;
     flex-wrap: wrap;
     font-style: normal;
-    max-width: 119px;
+    max-width: 119px;    
   }
 
   .nav-link {
@@ -173,7 +173,7 @@
   }
 
   .footer-section {
-    text-align: start;
+    text-align: start;    
   }
 
   .footer-soc-text {
@@ -192,5 +192,6 @@
   .footer-email {
     display: flex;
     margin-right: 24px;
+    width: 278px;
   }
 }
