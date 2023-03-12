@@ -250,6 +250,7 @@ body {
   display: flex;
   align-items: center;
   height: 72px;
+  padding: 0 15px;
 }
 
 .header-navigation {
@@ -531,7 +532,7 @@ body {
 }
 
 .customers-item {
-  width: 168px;
+  width: calc((100% - 16px) / 2);
   height: 88px;
 }
 

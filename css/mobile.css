@@ -64,10 +64,17 @@
   .team-container {
     max-width: 426px;
     margin: 0 auto;
+    padding: 0 15px;
   }
 
   .team-list {
     gap: 72px 24px;
+  }
+
+  .customers-container {
+    max-width: 456px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 
   .filter-button-list {

@@ -1,6 +1,7 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 766px;
+    padding: 0 15px;
     margin: 0 auto;
   }
 
@@ -74,12 +75,6 @@
     transition-duration: 250ms;
   }
 
-  .container {
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 736px;
-  }
-
   .hero-section {
     min-height: 436px;
     width: 100%;
@@ -103,10 +98,6 @@
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 40px;
-  }
-
-  .features-section .container {
-    padding: 0;
   }
 
   .features-list {
@@ -136,6 +127,7 @@
   .team-container {
     max-width: 552px;
     margin: 0 auto;
+    padding: 0 15px;
   }
 
   .team-section {
@@ -151,13 +143,20 @@
     width: calc((100% - 24px) / 2);
   }
 
-  .customers-list {
-    flex-wrap: wrap;
-    max-width: 552px;
+  .customers-container {
+    max-width: 582px;
     margin: 0 auto;
-    gap: 24px;
+    padding: 0 15px;
   }
 
+  .customers-list {
+    flex-wrap: wrap;
+  }
+
+  .customers-item {
+    width: calc((100% - 32px) / 3);
+  }
+  
   .filter-list {
     display: flex;
     flex-wrap: wrap;
@@ -189,7 +188,8 @@
   .footer-container {
     flex-wrap: wrap;
     flex-direction: row;
-    max-width: 552px;
+    max-width: 582px;
+    padding: 0 15px;
   }
 
   .footer-section {
@@ -213,5 +213,6 @@
     display: flex;
     margin-right: 24px;
     width: 264px;
+    margin-bottom: 0;
   }
 }
