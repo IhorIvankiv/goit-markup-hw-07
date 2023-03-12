@@ -23,7 +23,7 @@
     justify-content: end;
     flex-wrap: wrap;
     font-style: normal;
-    max-width: 119px;    
+    max-width: 119px;
   }
 
   .nav-link {
@@ -192,6 +192,5 @@
   .footer-email {
     display: flex;
     margin-right: 24px;
-    width: 264px;
   }
 }
