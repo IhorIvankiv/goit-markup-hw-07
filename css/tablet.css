@@ -58,6 +58,10 @@
     color: var(--pressed-state-color);
   }
 
+  .address-list li:first-child {
+    margin-bottom: 4px;
+  }
+
   .address-link {
     font-weight: 400;
     font-size: 12px;
