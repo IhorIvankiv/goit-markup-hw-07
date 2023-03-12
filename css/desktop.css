@@ -4,7 +4,11 @@
     padding: 0 15px;
     max-width: 1158px;
   }
-  
+
+  .logo-navigation {
+    margin-right: 76px;
+  }
+
   .header-list,
   .address-link {
     display: flex;
@@ -159,11 +163,6 @@
     text-align: center;
     background: var(--light-mode-bg);
     gap: 24px;
-  }
-
-  .customers-list {
-    max-width: 1158px;
-    margin: 0 auto;
   }
 
   .footer-container {
