@@ -1,0 +1,80 @@
+@media screen and (min-width: 480px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .hero-section {
+    min-height: 436px;
+    background-image: var(--linear-gradient),
+      url(../images/hero_image_mobile.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: var(--linear-gradient),
+        url(../images/hero_image_mobile_2x.jpg);
+    }
+  }
+
+  .menu-open {
+    border: none;
+    background: inherit;
+  }
+
+  .menu-icon {
+    stroke: black;
+  }
+
+  .hero-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    width: calc((100% - 24) / 2);
+  }
+
+  .features-item:last-child {
+    padding-bottom: 96px;
+  }
+
+  .features-subtitle {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  }
+
+  .features-rectangle {
+    display: none;
+  }
+
+  .team-list {
+    gap: 72px 24px;
+  }
+
+  .customers-list {
+    margin: 0 auto;
+    max-width: 552px;
+  }
+
+  .filter-button-list {
+    max-width: 428px;
+  }
+
+  .modal {
+    width: 408px;
+  }
+}
