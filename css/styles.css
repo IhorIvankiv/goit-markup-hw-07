@@ -534,7 +534,6 @@ body {
 .customers-item {
   width: calc((100% - 16px) / 2);
   height: 88px;
-  padding: 0 15px;
 }
 
 .customers-client-link:is(:hover, :focus) {
