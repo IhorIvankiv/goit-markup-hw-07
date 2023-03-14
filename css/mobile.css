@@ -85,8 +85,4 @@
     background-color: var(--active-states-color);
     fill: #fff;
   }
-
-  .footer-text {
-    margin-bottom: 72px;
-  }
 }

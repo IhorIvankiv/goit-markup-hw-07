@@ -934,6 +934,7 @@ body {
 
 .footer-soc-section {
   margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .footer-soc-text {
@@ -949,7 +950,6 @@ body {
 .footer-soc-list {
   display: flex;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 .footer-soc-item {
