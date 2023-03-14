@@ -144,7 +144,7 @@
   }
 
   .customers-container {
-    max-width: 582px;
+    max-width: 566px;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -156,7 +156,7 @@
   .customers-item {
     width: calc((100% - 32px) / 3);
   }
-  
+
   .filter-list {
     display: flex;
     flex-wrap: wrap;
